@@ -8,10 +8,11 @@ import os #used to delete the reversed log, once the complete log is generated
 import glob #used to find config.txt
 
 '''
-Dec 9 2016
+Dec 12 2016
 ADDED:
 1) config.txt (force a user to get their own application/hiding my own tokens)
 2) Guilds menu
+3) small update to instructions (must include localhost:5000 on your application)
 
 So now SDA can get every kind of text channel!
 
@@ -168,9 +169,17 @@ if len(cfg) == 0:
     print('''
 Please log onto the Discord website, and go to
 https://discordapp.com/developers/applications/me
-and register a new application. The application should have a ClientID
-and a Client Secret.
+and register a new application.
+
+In the Redirect URI(s) field, you must add https://localhost:5000.
+
+The application should have a ClientID and a Client Secret.
+Enter these into Simple Discord Archiver, but do not share them
+anywhere else. 
+
+Press ENTER to continue.
     ''')
+    input("")
     clientID = input("Please enter the ClientID.\n>")
     configHandle.write(clientID+"\n")
     clientSecret = input("Please enter the Client Secret.\n>")
