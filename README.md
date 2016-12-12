@@ -1,5 +1,9 @@
 # SimpleDiscordArchiver
-SDiscordArchiver.py is a (relatively) simple python program for archiving Discord chat logs, intended for a general public.
+SDiscordArchiver.py is a (relatively) simple python program for archiving Discord chat logs.
+It was intended only for personal use; however, since other people may find this useful, I have made it public.
+The "simple" in the name does not mean that it is simple to use; rather, it means that
+the program was written in (relatively) simple code. 
+
 You should install python (version >= 3.4) before downloading and running the .py file.
 
 NOTE: This program is insecure, as the OAUTH2 code is not transmitted securely (or rather,
